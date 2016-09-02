@@ -1,6 +1,15 @@
 <%=@contact.first_name%> successfully added
+<h2>Contact</h2>
+<%=@contact.first_name%>
+<%=@contact.last_name%>
+<%=@contact.email%>
+<%=@contact.address%>
+
 <form action="/" method="get">
   <input type="submit" value="Add More Contacts">
+</form>
+<form action="edit" method="get">
+  <input type="submit" value="Edit Contact">
 </form>
 <form action="contact_list" method="get">
   <input type="submit" value="View Contacts">

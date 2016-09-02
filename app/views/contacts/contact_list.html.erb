@@ -5,6 +5,7 @@
       <th>Last Name</th>
       <th>Email</th>
       <th>Address</th>
+      <th></th>
     </tr>
     <% @contacts.each do |c| %>
     <tr>
@@ -12,5 +13,9 @@
       <td><%= c.last_name %></td>
       <td><%= c.email %></td>
       <td><%= c.address %></td>
+      <td><form action="update" method="get" ><input type="submit" value="Change Contact Info" id="<%=c.id%>"></form></td>
       <% end %>
   </table>
+<!--  <form action="/" method="get">
+    <input type="submit" value="Add More Contacts">
+  </form>-->

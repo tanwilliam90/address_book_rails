@@ -7,6 +7,10 @@ Rails.application.routes.draw do
 
   get 'contacts/contact_list'
 
+  get 'contacts/:id', to: 'contacts#edit'
+
+  get 'contacts/update'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
